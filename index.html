@@ -34,7 +34,7 @@
             color: var(--text-main);
             overflow-x: hidden;
             line-height: 1.6;
-            font-size: 17px; /* Increased overall font size */
+            font-size: 16px; /* Restored original base size for desktop */
         }
 
         /* App Layout Grid */
@@ -44,7 +44,7 @@
             min-height: 100vh;
         }
 
-        /* Sidebar Styling */
+        /* Sidebar Styling (Desktop default) */
         .sidebar {
             background-color: #050813;
             border-right: 1px solid var(--border-card);
@@ -61,15 +61,26 @@
         .logo-area {
             display: flex;
             align-items: center;
-            justify-content: center; /* Centered Logo */
-            margin-bottom: 3.5rem;
+            gap: 0.75rem;
+            margin-bottom: 2.5rem;
         }
 
         .logo-img {
-            height: 52px; /* Increased Logo size */
+            height: 32px; /* Restored desktop size */
             width: auto;
             object-fit: contain;
-            filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.3));
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, #ffffff 0%, #b39ddb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            outline: none;
+            padding: 0.25rem;
         }
 
         .nav-list {
@@ -101,7 +112,7 @@
             text-decoration: none;
             padding: 0.75rem 0.85rem;
             width: 100%;
-            font-size: 1rem; /* Slightly larger text */
+            font-size: 0.925rem; /* Restored size */
             font-weight: 500;
             outline: none;
         }
@@ -121,7 +132,7 @@
         .footer-branding {
             border-top: 1px solid var(--border-card);
             padding-top: 1.5rem;
-            font-size: 0.8rem;
+            font-size: 0.75rem; /* Restored size */
             color: var(--text-muted);
         }
 
@@ -141,7 +152,7 @@
             color: #b39ddb;
             padding: 0.6rem 1rem;
             border-radius: 8px;
-            font-size: 0.9rem;
+            font-size: 0.85rem; /* Restored size */
             font-weight: 600;
             cursor: pointer;
             margin-bottom: 1.5rem;
@@ -152,11 +163,6 @@
         .fullscreen-btn:hover {
             background: rgba(124, 58, 237, 0.2);
             box-shadow: 0 0 10px rgba(124, 58, 237, 0.2);
-        }
-
-        /* Mobile Header controls */
-        .mobile-header-bar {
-            display: none;
         }
 
         /* Main Content Styling */
@@ -185,7 +191,7 @@
 
         .cover-left h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 3.8rem; /* Increased size */
+            font-size: 3.5rem; /* Restored desktop size */
             font-weight: 800;
             line-height: 1.1;
             letter-spacing: -1px;
@@ -204,7 +210,7 @@
             color: #b39ddb;
             padding: 0.5rem 1rem;
             border-radius: 99px;
-            font-size: 0.9rem;
+            font-size: 0.875rem; /* Restored desktop size */
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -257,7 +263,7 @@
 
         .dash-header h2 {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.5rem; /* Increased font size */
+            font-size: 2.25rem; /* Restored size */
             font-weight: 700;
             letter-spacing: -0.5px;
             background: linear-gradient(135deg, #ffffff 0%, #b39ddb 100%);
@@ -268,7 +274,7 @@
 
         .dash-header p {
             color: var(--text-muted);
-            font-size: 1.05rem; /* Increased size */
+            font-size: 0.95rem; /* Restored size */
             margin-top: 0.25rem;
             outline: none;
         }
@@ -314,7 +320,7 @@
 
         .card-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem; /* Increased size */
+            font-size: 1.25rem; /* Restored size */
             font-weight: 600;
             color: #fff;
             display: flex;
@@ -366,7 +372,7 @@
         }
 
         .kpi-label {
-            font-size: 0.8rem; /* Increased size */
+            font-size: 0.725rem; /* Restored size */
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -377,7 +383,7 @@
 
         .kpi-value {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.9rem; /* Increased size */
+            font-size: 1.75rem; /* Restored size */
             font-weight: 700;
             color: #fff;
             line-height: 1.2;
@@ -385,7 +391,7 @@
         }
 
         .kpi-subtext {
-            font-size: 0.85rem; /* Increased size */
+            font-size: 0.8rem; /* Restored size */
             color: var(--text-muted);
             margin-top: 0.5rem;
             display: flex;
@@ -423,7 +429,7 @@
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 0.95rem; /* Increased size */
+            font-size: 0.9rem; /* Restored size */
         }
 
         .premium-table th {
@@ -461,7 +467,7 @@
             font-family: 'Outfit', sans-serif;
             color: #b39ddb;
             margin-bottom: 1rem;
-            font-size: 1.2rem; /* Increased size */
+            font-size: 1.1rem; /* Restored size */
             font-weight: 600;
             outline: none;
         }
@@ -469,7 +475,7 @@
         .strategy-block p {
             outline: none;
             color: var(--text-muted);
-            font-size: 1rem; /* Increased size */
+            font-size: 0.925rem; /* Restored size */
         }
 
         /* Final Presentation Section Styling */
@@ -533,100 +539,100 @@
 
         /* RESPONSIVE DESIGN - MOBILE ONLY OPTIMIZATIONS (iOS and Android) */
         @media (max-width: 768px) {
-            .app-container {
-                display: block;
-                padding-top: 70px; /* Offset for fixed top navbar */
+            body {
+                font-size: 17px; /* Increased base size only on mobile */
             }
 
-            /* Turn Sidebar into a fixed top bar on mobile */
+            .app-container {
+                display: block;
+                padding-top: 155px; /* Adjusted padding-top to fit visible navigation grid on mobile */
+            }
+
+            /* Turn Sidebar into a fixed top bar on mobile, housing the logo & the navigation directly */
             .sidebar {
                 position: fixed;
                 top: 0;
                 left: 0;
                 right: 0;
-                height: 70px;
+                height: 155px;
                 width: 100vw;
                 background-color: #050813;
                 border-right: none;
                 border-bottom: 1px solid var(--border-card);
-                padding: 0 1.25rem;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
+                padding: 0.8rem 1rem 0.5rem 1rem;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 0.75rem;
                 z-index: 1000;
             }
 
             .logo-area {
                 margin-bottom: 0;
-                justify-content: flex-start;
+                justify-content: center;
+                gap: 0;
+                width: 100%;
             }
 
             .logo-img {
-                height: 42px; /* Balanced mobile height */
+                height: 42px; /* Smaller mobile height to make space for buttons */
+            }
+
+            .logo-text {
+                display: none; /* Hide agency name only on mobile */
+            }
+
+            /* Show navigation directly on mobile */
+            .sidebar nav {
+                display: block !important;
+                width: 100%;
+            }
+
+            /* Arrange menu items in a grid (2 to 3 cards per line) */
+            .nav-list {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+                gap: 0.4rem;
+                width: 100%;
+            }
+
+            /* 2 columns on extra small viewports to avoid cramping */
+            @media (max-width: 480px) {
+                .nav-list {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            .nav-item {
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.02);
+                border: 1px solid var(--border-card);
+                border-radius: 6px;
+            }
+
+            .nav-item a {
+                font-size: 0.8rem;
+                padding: 0.45rem 0.2rem;
+                justify-content: center;
+                gap: 0;
+                text-align: center;
+                width: 100%;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .nav-item.active a, .nav-item a:hover {
+                background: rgba(124, 58, 237, 0.12);
+                border-left: none;
+                border-bottom: 2px solid var(--accent);
+                padding-left: 0.2rem;
+                padding-bottom: calc(0.45rem - 2px);
             }
 
             /* Hide elements not needed in minimal header */
-            .sidebar nav, .sidebar .fullscreen-btn, .sidebar .footer-branding {
+            .sidebar .fullscreen-btn, .sidebar .footer-branding {
                 display: none;
-            }
-
-            /* Mobile Menu Button (Hamburger) */
-            .mobile-header-bar {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .hamburger-btn {
-                background: none;
-                border: none;
-                color: #fff;
-                font-size: 1.75rem;
-                cursor: pointer;
-                outline: none;
-                padding: 0.25rem;
-            }
-
-            /* Mobile Menu Panel */
-            .mobile-menu-drawer {
-                position: fixed;
-                top: 70px;
-                left: 0;
-                width: 100vw;
-                height: calc(100vh - 70px);
-                background-color: rgba(5, 8, 19, 0.98);
-                backdrop-filter: blur(15px);
-                z-index: 999;
-                display: none;
-                flex-direction: column;
-                justify-content: space-between;
-                padding: 2rem;
-                border-top: 1px solid var(--border-card);
-                animation: slideDown 0.3s ease-out forwards;
-            }
-
-            @keyframes slideDown {
-                from { transform: translateY(-20px); opacity: 0; }
-                to { transform: translateY(0); opacity: 1; }
-            }
-
-            .mobile-menu-drawer.open {
-                display: flex;
-            }
-
-            .mobile-menu-drawer .nav-list {
-                gap: 1.25rem;
-            }
-
-            .mobile-menu-drawer .nav-item a {
-                font-size: 1.35rem;
-                padding: 0.85rem 1rem;
-            }
-
-            .mobile-menu-drawer .fullscreen-btn {
-                margin-top: 2rem;
-                padding: 0.85rem;
-                font-size: 1.1rem;
             }
 
             /* Content area padding */
@@ -722,22 +728,18 @@
         <div>
             <div class="logo-area">
                 <img src="logo-howli.png" class="logo-img" alt="Howli Logo">
+                <div class="logo-text" contenteditable="true">HOWLI</div>
             </div>
             
             <nav>
                 <ul class="nav-list" id="sidebarNavList">
-                    <li class="nav-item active" data-target="cover" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#cover"><span>Capa do Relatório</span></a></li>
-                    <li class="nav-item" data-target="meta-ads" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#meta-ads"><span>Meta Ads</span></a></li>
-                    <li class="nav-item" data-target="google-ads" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#google-ads"><span>Google Ads</span></a></li>
-                    <li class="nav-item" data-target="next-steps" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#next-steps"><span>Próximos Passos</span></a></li>
-                    <li class="nav-item" data-target="finalizacao" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#finalizacao"><span>Agradecimento</span></a></li>
+                    <li class="nav-item active" data-target="cover" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#cover"><span contenteditable="true">Capa do Relatório</span></a></li>
+                    <li class="nav-item" data-target="meta-ads" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#meta-ads"><span contenteditable="true">Meta Ads</span></a></li>
+                    <li class="nav-item" data-target="google-ads" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#google-ads"><span contenteditable="true">Google Ads</span></a></li>
+                    <li class="nav-item" data-target="next-steps" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#next-steps"><span contenteditable="true">Próximos Passos</span></a></li>
+                    <li class="nav-item" data-target="finalizacao" draggable="true" ondragstart="handleDragStart(event)" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragend="handleDragEnd(event)"><a href="#finalizacao"><span contenteditable="true">Agradecimento</span></a></li>
                 </ul>
             </nav>
-        </div>
-
-        <div class="mobile-header-bar">
-            <!-- Hamburger menu button visible only on mobile -->
-            <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu">☰</button>
         </div>
 
         <div>
@@ -747,57 +749,34 @@
             </button>
             
             <div class="footer-branding">
-                <strong>Maio 2026</strong>
-                <span>Performance Dashboard</span>
+                <strong contenteditable="true">Maio 2026</strong>
+                <span contenteditable="true">Performance Dashboard</span>
             </div>
         </div>
     </aside>
-
-    <!-- Mobile Drawer menu overlay -->
-    <div class="mobile-menu-drawer" id="mobileMenuDrawer">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item active" data-target="cover" onclick="closeMobileMenu()"><a href="#cover"><span>Capa do Relatório</span></a></li>
-                <li class="nav-item" data-target="meta-ads" onclick="closeMobileMenu()"><a href="#meta-ads"><span>Meta Ads</span></a></li>
-                <li class="nav-item" data-target="google-ads" onclick="closeMobileMenu()"><a href="#google-ads"><span>Google Ads</span></a></li>
-                <li class="nav-item" data-target="next-steps" onclick="closeMobileMenu()"><a href="#next-steps"><span>Próximos Passos</span></a></li>
-                <li class="nav-item" data-target="finalizacao" onclick="closeMobileMenu()"><a href="#finalizacao"><span>Agradecimento</span></a></li>
-            </ul>
-        </nav>
-        
-        <div>
-            <button class="fullscreen-btn" onclick="toggleFullScreen(); closeMobileMenu();">
-                <span>📺 Tela Cheia</span>
-            </button>
-            <div class="footer-branding" style="border-top: none; text-align: center; padding-top: 0;">
-                <strong>Maio 2026</strong>
-                <span>Performance Dashboard</span>
-            </div>
-        </div>
-    </div>
 
     <!-- Main Content Area -->
     <main class="main-content">
         <!-- COVER SECTION -->
         <section id="cover" class="section-block active">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-                <div class="cover-badge">🏆 Dashboard de Performance</div>
+                <div class="cover-badge" contenteditable="true">🏆 Dashboard de Performance</div>
             </div>
             
             <div class="cover-content" style="margin-top: 4rem;">
                 <div class="cover-left">
-                    <h1>Relatório de Tráfego Pago</h1>
-                    <p style="font-size: 2.2rem; color: #fff; margin-bottom: 0.75rem; font-family: 'Outfit'; font-weight: 700;">Dreno Pro</p>
-                    <p style="font-size: 1.15rem; color: var(--text-muted); font-weight: 300; margin-bottom: 4rem;">Análise estratégica de tráfego pago e conversão e-commerce no período de Maio de 2026.</p>
+                    <h1 contenteditable="true">Relatório de Tráfego Pago</h1>
+                    <p style="font-size: 2.2rem; color: #fff; margin-bottom: 0.75rem; font-family: 'Outfit'; font-weight: 700;" contenteditable="true">Dreno Pro</p>
+                    <p style="font-size: 1.15rem; color: var(--text-muted); font-weight: 300; margin-bottom: 4rem;" contenteditable="true">Análise estratégica de tráfego pago e conversão e-commerce no período de Maio de 2026.</p>
                     
                     <!-- Cover Signature Block -->
                     <div class="closing-footer-layout" style="justify-content: flex-start; margin-top: 2rem;">
                         <img src="logo-howli.png" style="height: 35px; object-fit: contain; filter: drop-shadow(0 0 5px rgba(124, 58, 237, 0.3));" alt="Howli Logo">
-                        <div class="footer-logo-mike" style="margin-left: -0.5rem;">HOWLI</div>
+                        <div class="footer-logo-mike" style="margin-left: -0.5rem;" contenteditable="true">HOWLI</div>
                         <div class="closing-divider"></div>
                         <div style="text-align: left; font-size: 0.8rem; color: var(--text-muted);">
-                            <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">DRENO PRO</strong>
-                            <span>Gestão de Mídia & Analytics | Maio 2026</span>
+                            <strong style="color: #fff; display: block; margin-bottom: 0.25rem;" contenteditable="true">DRENO PRO</strong>
+                            <span contenteditable="true">Gestão de Mídia & Analytics | Maio 2026</span>
                         </div>
                     </div>
                 </div>
@@ -813,100 +792,100 @@
         <section id="meta-ads" class="section-block">
             <div class="dash-header">
                 <div>
-                    <h2>Meta Ads (Facebook / Instagram)</h2>
-                    <p>Resultados das campanhas de tráfego e conversão - Maio 2026</p>
+                    <h2 contenteditable="true">Meta Ads (Facebook / Instagram)</h2>
+                    <p contenteditable="true">Resultados das campanhas de tráfego e conversão - Maio 2026</p>
                 </div>
             </div>
 
             <div class="strategy-container">
                 <div class="strategy-block">
-                    <h4>Objetivo</h4>
-                    <p>Aumentar a receita do ecommerce</p>
+                    <h4 contenteditable="true">Objetivo</h4>
+                    <p contenteditable="true">Aumentar a receita do ecommerce</p>
                 </div>
                 <div class="strategy-block">
-                    <h4>Estratégia</h4>
-                    <p>Utilizamos diversos testes de conversões, públicos e produtos para encontrar os melhores resultados em termos de ROI e escala</p>
+                    <h4 contenteditable="true">Estratégia</h4>
+                    <p contenteditable="true">Utilizamos diversos testes de conversões, públicos e produtos para encontrar os melhores resultados em termos de ROI e escala</p>
                 </div>
             </div>
 
             <div class="glass-card">
                 <div class="card-header">
-                    <div class="card-title">
+                    <div class="card-title" contenteditable="true">
                         <div class="card-title-icon" style="background: var(--meta-color)"></div>
                         Resultado [PURCHASE] DRENOPRO
                     </div>
                 </div>
                 <div class="kpi-grid">
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Impressões</div>
-                        <div class="kpi-value">56.669</div>
-                        <div class="kpi-subtext">Visualizações dos anúncios</div>
+                        <div class="kpi-label" contenteditable="true">Impressões</div>
+                        <div class="kpi-value" contenteditable="true">56.669</div>
+                        <div class="kpi-subtext" contenteditable="true">Visualizações dos anúncios</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Pessoas Alcançadas</div>
-                        <div class="kpi-value">41.843</div>
-                        <div class="kpi-subtext">Alcance único da campanha</div>
+                        <div class="kpi-label" contenteditable="true">Pessoas Alcançadas</div>
+                        <div class="kpi-value" contenteditable="true">41.843</div>
+                        <div class="kpi-subtext" contenteditable="true">Alcance único da campanha</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Vendas</div>
-                        <div class="kpi-value">13</div>
-                        <div class="kpi-subtext">Conversões em compras realizadas</div>
+                        <div class="kpi-label" contenteditable="true">Vendas</div>
+                        <div class="kpi-value" contenteditable="true">13</div>
+                        <div class="kpi-subtext" contenteditable="true">Conversões em compras realizadas</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Custo por Venda</div>
-                        <div class="kpi-value">R$ 99,15</div>
-                        <div class="kpi-subtext">Custo médio por venda</div>
+                        <div class="kpi-label" contenteditable="true">Custo por Venda</div>
+                        <div class="kpi-value" contenteditable="true">R$ 99,15</div>
+                        <div class="kpi-subtext" contenteditable="true">Custo médio por venda</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">ROI (ROAS)</div>
-                        <div class="kpi-value">2.70</div>
-                        <div class="kpi-subtext">Retorno sobre investimento</div>
+                        <div class="kpi-label" contenteditable="true">ROI (ROAS)</div>
+                        <div class="kpi-value" contenteditable="true">2.70</div>
+                        <div class="kpi-subtext" contenteditable="true">Retorno sobre investimento</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Receita</div>
-                        <div class="kpi-value">R$ 3.486,58</div>
-                        <div class="kpi-subtext">Receita total gerada</div>
+                        <div class="kpi-label" contenteditable="true">Receita</div>
+                        <div class="kpi-value" contenteditable="true">R$ 3.486,58</div>
+                        <div class="kpi-subtext" contenteditable="true">Receita total gerada</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Investimento</div>
-                        <div class="kpi-value">R$ 1.289,00</div>
-                        <div class="kpi-subtext">Investimento total no período</div>
+                        <div class="kpi-label" contenteditable="true">Investimento</div>
+                        <div class="kpi-value" contenteditable="true">R$ 1.289,00</div>
+                        <div class="kpi-subtext" contenteditable="true">Investimento total no período</div>
                     </div>
                 </div>
             </div>
 
             <div class="glass-card">
                 <div class="card-header">
-                    <div class="card-title">
+                    <div class="card-title" contenteditable="true">
                         <div class="card-title-icon" style="background: var(--meta-color)"></div>
                         [TRÁFEGO SITE] DRENOPRO
                     </div>
                 </div>
                 <div class="kpi-grid">
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Impressões</div>
-                        <div class="kpi-value">17.496</div>
-                        <div class="kpi-subtext">Visualizações dos anúncios</div>
+                        <div class="kpi-label" contenteditable="true">Impressões</div>
+                        <div class="kpi-value" contenteditable="true">17.496</div>
+                        <div class="kpi-subtext" contenteditable="true">Visualizações dos anúncios</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Pessoas Alcançadas</div>
-                        <div class="kpi-value">13.928</div>
-                        <div class="kpi-subtext">Alcance único da campanha</div>
+                        <div class="kpi-label" contenteditable="true">Pessoas Alcançadas</div>
+                        <div class="kpi-value" contenteditable="true">13.928</div>
+                        <div class="kpi-subtext" contenteditable="true">Alcance único da campanha</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Visitas ao Site</div>
-                        <div class="kpi-value">294</div>
-                        <div class="kpi-subtext">Visitas geradas ao site</div>
+                        <div class="kpi-label" contenteditable="true">Visitas ao Site</div>
+                        <div class="kpi-value" contenteditable="true">294</div>
+                        <div class="kpi-subtext" contenteditable="true">Visitas geradas ao site</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Custo por Visita</div>
-                        <div class="kpi-value">R$ 0,35</div>
-                        <div class="kpi-subtext">Custo médio por visita ao site</div>
+                        <div class="kpi-label" contenteditable="true">Custo por Visita</div>
+                        <div class="kpi-value" contenteditable="true">R$ 0,35</div>
+                        <div class="kpi-subtext" contenteditable="true">Custo médio por visita ao site</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--meta-color)">
-                        <div class="kpi-label">Investimento</div>
-                        <div class="kpi-value">R$ 103,50</div>
-                        <div class="kpi-subtext">Investimento total na campanha</div>
+                        <div class="kpi-label" contenteditable="true">Investimento</div>
+                        <div class="kpi-value" contenteditable="true">R$ 103,50</div>
+                        <div class="kpi-subtext" contenteditable="true">Investimento total na campanha</div>
                     </div>
                 </div>
             </div>
@@ -916,48 +895,48 @@
         <section id="google-ads" class="section-block">
             <div class="dash-header">
                 <div>
-                    <h2>Google Ads</h2>
-                    <p>Resultados da campanha PMAX - Maio 2026</p>
+                    <h2 contenteditable="true">Google Ads</h2>
+                    <p contenteditable="true">Resultados da campanha PMAX - Maio 2026</p>
                 </div>
             </div>
 
             <div class="glass-card">
                 <div class="card-header">
-                    <div class="card-title">
+                    <div class="card-title" contenteditable="true">
                         <div class="card-title-icon" style="background: var(--google-color)"></div>
                         Resultado PMAX DRENOPRO 03-2026
                     </div>
                 </div>
                 <div class="kpi-grid">
                     <div class="kpi-card" style="--accent: var(--google-color)">
-                        <div class="kpi-label">Impressões</div>
-                        <div class="kpi-value">36.854</div>
-                        <div class="kpi-subtext">Visualizações no Google Ads</div>
+                        <div class="kpi-label" contenteditable="true">Impressões</div>
+                        <div class="kpi-value" contenteditable="true">36.854</div>
+                        <div class="kpi-subtext" contenteditable="true">Visualizações no Google Ads</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--google-color)">
-                        <div class="kpi-label">Cliques e Engajamentos</div>
-                        <div class="kpi-value">1.459</div>
-                        <div class="kpi-subtext">Total de interações</div>
+                        <div class="kpi-label" contenteditable="true">Cliques e Engajamentos</div>
+                        <div class="kpi-value" contenteditable="true">1.459</div>
+                        <div class="kpi-subtext" contenteditable="true">Total de interações</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--google-color)">
-                        <div class="kpi-label">Compras</div>
-                        <div class="kpi-value">1</div>
-                        <div class="kpi-subtext">Conversões em compras realizadas</div>
+                        <div class="kpi-label" contenteditable="true">Compras</div>
+                        <div class="kpi-value" contenteditable="true">1</div>
+                        <div class="kpi-subtext" contenteditable="true">Conversões em compras realizadas</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--google-color)">
-                        <div class="kpi-label">ROAS</div>
-                        <div class="kpi-value">0.43</div>
-                        <div class="kpi-subtext">Retorno sobre investimento</div>
+                        <div class="kpi-label" contenteditable="true">ROAS</div>
+                        <div class="kpi-value" contenteditable="true">0.43</div>
+                        <div class="kpi-subtext" contenteditable="true">Retorno sobre investimento</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--google-color)">
-                        <div class="kpi-label">Receita</div>
-                        <div class="kpi-value">R$ 245,00</div>
-                        <div class="kpi-subtext">Receita gerada pelo canal</div>
+                        <div class="kpi-label" contenteditable="true">Receita</div>
+                        <div class="kpi-value" contenteditable="true">R$ 245,00</div>
+                        <div class="kpi-subtext" contenteditable="true">Receita gerada pelo canal</div>
                     </div>
                     <div class="kpi-card" style="--accent: var(--google-color)">
-                        <div class="kpi-label">Investimento</div>
-                        <div class="kpi-value">R$ 564,71</div>
-                        <div class="kpi-subtext">Investimento total no período</div>
+                        <div class="kpi-label" contenteditable="true">Investimento</div>
+                        <div class="kpi-value" contenteditable="true">R$ 564,71</div>
+                        <div class="kpi-subtext" contenteditable="true">Investimento total no período</div>
                     </div>
                 </div>
             </div>
@@ -967,18 +946,18 @@
         <section id="next-steps" class="section-block">
             <div class="dash-header">
                 <div>
-                    <h2>Próximos Passos</h2>
-                    <p>Análise estratégica de performance e oportunidades de escala</p>
+                    <h2 contenteditable="true">Próximos Passos</h2>
+                    <p contenteditable="true">Análise estratégica de performance e oportunidades de escala</p>
                 </div>
             </div>
 
             <div class="glass-card">
                 <div style="margin-bottom: 2rem;">
-                    <h3 style="font-family: 'Outfit'; font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem;">
+                    <h3 style="font-family: 'Outfit'; font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem;" contenteditable="true">
                         <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--accent);"></span>
                         Resumo Geral das Ações & Planejamento
                     </h3>
-                    <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.8; white-space: pre-wrap; font-weight: 400; font-family: 'Plus Jakarta Sans';">Realizamos cerca de 6 novos testes de públicos com 7 criativos diferentes, e já tivemos resultado positivo. No mês de Maio obtivemos 13 compras no conjunto do estado da Bahia investindo R$ 514,96 com um ROAS de 6.77 que nos trouxe a receita de R$ 3.486,58.
+                    <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.8; white-space: pre-wrap; font-weight: 400; font-family: 'Plus Jakarta Sans';" contenteditable="true">Realizamos cerca de 6 novos testes de públicos com 7 criativos diferentes, e já tivemos resultado positivo. No mês de Maio obtivemos 13 compras no conjunto do estado da Bahia investindo R$ 514,96 com um ROAS de 6.77 que nos trouxe a receita de R$ 3.486,58.
 
 No Google Ads a campanha P.Max revisada e atualizada teve 01 venda custando R$ 564,71, trazendo a receita de R$ 245,00.</p>
                 </div>
@@ -988,17 +967,17 @@ No Google Ads a campanha P.Max revisada e atualizada teve 01 venda custando R$ 5
         <!-- FINALIZATION SECTION -->
         <section id="finalizacao" class="section-block">
             <div class="final-presentation-block">
-                <h2 class="thank-you-title">Muito obrigado pela parceria!</h2>
+                <h2 class="thank-you-title" contenteditable="true">Muito obrigado pela parceria!</h2>
                 
                 <div class="final-branding-card" style="background: transparent; border: none; padding: 0;">
                     <!-- Closing Signature Block -->
                     <div class="closing-footer-layout">
                         <img src="logo-howli.png" style="height: 35px; object-fit: contain; filter: drop-shadow(0 0 5px rgba(124, 58, 237, 0.3));" alt="Howli Logo">
-                        <div class="footer-logo-mike" style="margin-left: -0.5rem;">HOWLI</div>
+                        <div class="footer-logo-mike" style="margin-left: -0.5rem;" contenteditable="true">HOWLI</div>
                         <div class="closing-divider"></div>
                         <div style="text-align: left; font-size: 0.8rem; color: var(--text-muted);">
-                            <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">DRENO PRO</strong>
-                            <span>Gestão de Mídia & Analytics | Maio 2026</span>
+                            <strong style="color: #fff; display: block; margin-bottom: 0.25rem;" contenteditable="true">DRENO PRO</strong>
+                            <span contenteditable="true">Gestão de Mídia & Analytics | Maio 2026</span>
                         </div>
                     </div>
                 </div>
@@ -1021,27 +1000,10 @@ No Google Ads a campanha P.Max revisada e atualizada teve 01 venda custando R$ 5
         }
     }
 
-    // Toggle mobile menu drawer open/close
-    function toggleMobileMenu() {
-        const drawer = document.getElementById('mobileMenuDrawer');
-        drawer.classList.toggle('open');
-        const btn = document.querySelector('.hamburger-btn');
-        if (drawer.classList.contains('open')) {
-            btn.innerHTML = '✕';
-        } else {
-            btn.innerHTML = '☰';
-        }
-    }
-
-    function closeMobileMenu() {
-        const drawer = document.getElementById('mobileMenuDrawer');
-        drawer.classList.remove('open');
-        document.querySelector('.hamburger-btn').innerHTML = '☰';
-    }
-
     // Navigation routing logic
     document.querySelectorAll('.nav-item').forEach(item => {
         item.addEventListener('click', function(e) {
+            if (e.target.hasAttribute('contenteditable') || e.target.closest('[contenteditable="true"]')) return;
             e.preventDefault();
             const target = this.getAttribute('data-target');
             
@@ -1120,6 +1082,18 @@ No Google Ads a campanha P.Max revisada e atualizada teve 01 venda custando R$ 5
         e.currentTarget.classList.remove('drag-over');
         return false;
     }
+
+    // Function to ensure edits don't trigger drag effects
+    document.querySelectorAll('[contenteditable="true"]').forEach(el => {
+        el.addEventListener('focus', () => {
+            const navItem = el.closest('.nav-item');
+            if (navItem) navItem.setAttribute('draggable', 'false');
+        });
+        el.addEventListener('blur', () => {
+            const navItem = el.closest('.nav-item');
+            if (navItem) navItem.setAttribute('draggable', 'true');
+        });
+    });
 
     function handleDragEnd(e) {
         e.currentTarget.style.opacity = '1';
